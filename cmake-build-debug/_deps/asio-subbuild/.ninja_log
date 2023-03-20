@@ -1,0 +1,19 @@
+# ninja log v5
+0	58	7010309452378790	asio-populate-prefix/src/asio-populate-stamp/asio-populate-mkdir	b420ce0fa55af789
+0	58	7010309452378790	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-mkdir	b420ce0fa55af789
+58	16059	7010309612397782	asio-populate-prefix/src/asio-populate-stamp/asio-populate-download	8adb6164fe364451
+58	16059	7010309612397782	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-download	8adb6164fe364451
+16059	16100	7010309612812695	asio-populate-prefix/src/asio-populate-stamp/asio-populate-patch	25936e35a67f176
+16059	16100	7010309612812695	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-patch	25936e35a67f176
+16100	16142	7010309613231569	asio-populate-prefix/src/asio-populate-stamp/asio-populate-configure	5b0d8b58ec1e65a4
+16100	16142	7010309613231569	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-configure	5b0d8b58ec1e65a4
+16142	16184	7010309613650467	asio-populate-prefix/src/asio-populate-stamp/asio-populate-build	e6b9e49f0356c7fc
+16142	16184	7010309613650467	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-build	e6b9e49f0356c7fc
+16184	16235	7010309614164483	asio-populate-prefix/src/asio-populate-stamp/asio-populate-install	ba05da3c01d1a312
+16184	16235	7010309614164483	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-install	ba05da3c01d1a312
+16235	16281	7010309614622971	asio-populate-prefix/src/asio-populate-stamp/asio-populate-test	9d5c960545571100
+16235	16281	7010309614622971	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-test	9d5c960545571100
+16281	16336	7010309615171501	CMakeFiles/asio-populate-complete	be2ca38bbf03b66d
+16281	16336	7010309615171501	asio-populate-prefix/src/asio-populate-stamp/asio-populate-done	be2ca38bbf03b66d
+16281	16336	7010309615171501	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/CMakeFiles/asio-populate-complete	be2ca38bbf03b66d
+16281	16336	7010309615171501	C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/cmake-build-debug/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-done	be2ca38bbf03b66d

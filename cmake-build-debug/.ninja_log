@@ -1,0 +1,17 @@
+# ninja log v5
+2	343	7010307270277862	CMakeFiles/NetworkProject.dir/main.cpp.obj	288f118b55719b42
+343	422	7010307271026135	NetworkProject.exe	126acb5a6e8d5269
+2	324	7010309839313177	CMakeFiles/NetworkProject.dir/main.cpp.obj	2dc71a5d91ef8dfe
+324	417	7010309840200473	NetworkProject.exe	cb73bf7f9e16e9bc
+7	3025	7010311879502725	CMakeFiles/NetworkProject.dir/main.cpp.obj	2dc71a5d91ef8dfe
+3029	3163	7010311880923854	NetworkProject.exe	cb73bf7f9e16e9bc
+6	2623	7010316832704387	CMakeFiles/NetworkProject.dir/main.cpp.obj	2dc71a5d91ef8dfe
+2623	2853	7010316834977095	NetworkProject.exe	cb73bf7f9e16e9bc
+6	2247	7010317257714673	CMakeFiles/NetworkProject.dir/main.cpp.obj	2dc71a5d91ef8dfe
+2248	2443	7010317259654953	NetworkProject.exe	cb73bf7f9e16e9bc
+9	4072	7010321597176601	CMakeFiles/NetworkProject.dir/main.cpp.obj	2dc71a5d91ef8dfe
+4073	4343	7010321599841138	NetworkProject.exe	cb73bf7f9e16e9bc
+6	3135	7010322662876145	CMakeFiles/NetworkProject.dir/main.cpp.obj	2dc71a5d91ef8dfe
+3136	3404	7010322665567373	NetworkProject.exe	cb73bf7f9e16e9bc
+7	2765	7010323739551627	CMakeFiles/NetworkProject.dir/main.cpp.obj	2dc71a5d91ef8dfe
+2765	3014	7010323742024351	NetworkProject.exe	cb73bf7f9e16e9bc
