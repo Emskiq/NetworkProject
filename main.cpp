@@ -1,4 +1,5 @@
 #include <iostream>
+#include <thread>
 
 /* Way to generalize the Windows routing (only for Windows) */
 #ifdef _WIN32
@@ -10,13 +11,38 @@
 #include <asio/ts/buffer.hpp>
 #include <asio/ts/internet.hpp>
 
+std::vector<char> vBuffer(1*1024);
+
+void getData(asio::ip::tcp::socket& socket)
+{
+    socket.async_read_some(asio::buffer(vBuffer.data(), vBuffer.size()),
+           [&](std::error_code ec, size_t len)
+                   {
+                        if (!ec)
+                        {
+                            std::cout<<"\n\nRead "<<len<<" bytes\n\n";
+
+                            for (int i = 0; i < len; ++i)
+                                std::cout<<vBuffer[i];
+
+                            getData(socket);
+                        }
+                   });
+}
+
 int main() {
     asio::error_code ec;
 
     // unique instance_id
     asio::io_context context;
 
-    asio::ip::tcp::endpoint endpoint(asio::ip::make_address("93.184.216.34", ec), 80);
+    asio::io_context::work idleWork(context);
+
+    // start context in separate thread
+    std::thread thrContext = std::thread([&]() { context.run(); });
+
+    // get the address of the site
+    asio::ip::tcp::endpoint endpoint(asio::ip::make_address("51.38.81.49", ec), 80);
 
     asio::ip::tcp::socket socket(context);
     socket.connect(endpoint, ec);
@@ -28,6 +54,8 @@ int main() {
 
     if (socket.is_open())
     {
+        getData(socket);
+
         std::string sRequest =
                 "GET /index.html HTTP/1.1\r\n"
                 "Host: example.com\r\n"
@@ -35,18 +63,18 @@ int main() {
 
         socket.write_some(asio::buffer(sRequest.data(), sRequest.size()), ec);
 
-        size_t bytes = socket.available();
-        std::cout<<"Bytes available: "<<bytes<<"\n";
+        // Very bad practice to put hard-coded delays
+//        using namespace std::chrono_literals;
+//        std::this_thread::sleep_for(1000ms);
 
-        if (bytes > 0)
-        {
-            std::vector<char> vBuffer(bytes);
-            socket.read_some(asio::buffer(vBuffer.data(), vBuffer.size()), ec);
+        // Better
+        socket.wait(socket.wait_read);
 
-            for (auto c : vBuffer)
-                std::cout<<c;
-        }
+        using namespace std::chrono_literals;
+        std::this_thread::sleep_for(2200ms);
 
+        context.stop();
+        if (thrContext.joinable()) thrContext.join();
     }
 
     return 0;
