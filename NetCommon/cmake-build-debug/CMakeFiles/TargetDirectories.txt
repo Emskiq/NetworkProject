@@ -1,0 +1,4 @@
+C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/NetCommon/cmake-build-debug/CMakeFiles/NetCommon.dir
+C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/NetCommon/cmake-build-debug/CMakeFiles/NetCommonExecutable.dir
+C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/NetCommon/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/NetCommon/cmake-build-debug/CMakeFiles/rebuild_cache.dir

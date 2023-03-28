@@ -90,7 +90,7 @@ namespace olc {
                 // Recalculate the message size
                 msg.header.size = msg.size();
 
-                // Return the target message so it can be "chained"
+                // Return the target message, so it can be "chained"
                 return msg;
             }
         };

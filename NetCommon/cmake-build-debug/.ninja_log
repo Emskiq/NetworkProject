@@ -1,0 +1,8 @@
+# ninja log v5
+6	2059	7017413127298349	CMakeFiles/NetCommon.dir/library.cpp.obj	ea2c9c94407bd300
+1853	1931	7017418693394875	libNetCommon.a	1a31f2ffe7443178
+4	1852	7017418692614751	CMakeFiles/NetCommon.dir/SimpleClient.cpp.obj	b14a52a2ab7b93b8
+1	281	7017420452256384	build.ninja	b75ce192923e0e39
+4	79	7017420576946970	libNetCommon.a	665540ace6cdb32f
+5	2194	7017422168107910	CMakeFiles/NetCommonExecutable.dir/SimpleClient.cpp.obj	cd6115dbe7af91f6
+2194	2358	7017422169694852	NetCommonExecutable.exe	a25447653b6dfcda

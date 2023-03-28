@@ -1,0 +1,3 @@
+C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/NetCommon/cmake-build-debug/_deps/asio-subbuild/CMakeFiles/asio-populate.dir
+C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/NetCommon/cmake-build-debug/_deps/asio-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/Emil Tsanev/Documents/podgotovka/NetworkProject/NetCommon/cmake-build-debug/_deps/asio-subbuild/CMakeFiles/rebuild_cache.dir
