@@ -17,7 +17,7 @@ include_directories(${asio_SOURCE_DIR}/asio/include/)
 
 link_libraries(ws2_32 wsock32)
 
-add_library(NetCommon library.cpp net_message.h net_common.h olc_net.h)
+add_library(NetCommon library.cpp net_message.h net_common.h olc_net.h net_tsqueue.h net_connection.h net_server.h net_client.h)
 
 add_executable(NetCommonExecutable SimpleClient.cpp)
 target_link_libraries(NetCommonExecutable NetCommon)
