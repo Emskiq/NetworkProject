@@ -15,6 +15,7 @@ namespace olc::net
      *  - It is deriving from std::enable_shared_from_this<connection<T>>, in order for the
      *  shared_from_this to be called inside the class connection and obtain a std::shared_ptr
      */
+
     template<typename T>
     class connection : public std::enable_shared_from_this<connection<T>> {
 

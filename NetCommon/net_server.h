@@ -152,6 +152,7 @@ namespace olc::net
         // Send message to all clients
         void MessageAllClients(const message<T>& msg, std::shared_ptr<connection<T>> pIgnoreClient = nullptr)
         {
+            // Optimization and also safe way to remove client from the list
             bool bInvalidClientExists = false;
 
             // Iterate through all clients in container
@@ -166,7 +167,7 @@ namespace olc::net
                 }
                 else
                 {
-                    // The client couldnt be contacted, so assume it has
+                    // The client couldn't be contacted, so assume it has
                     // disconnected.
                     OnClientDisconnect(client);
                     client.reset();
@@ -184,6 +185,7 @@ namespace olc::net
         }
 
         // Force server to respond to incoming messages
+        // Explicitly to be called
         void Update(size_t nMaxMessages = -1, bool bWait = false)
         {
             if (bWait) m_qMessagesIn.wait();
